@@ -1,13 +1,13 @@
 import peewee
 
 
-#db = connect('mysql://readonly_dev:QZy&h*YOc2%n6J||fLaN@external-read.cu98qr8jhy71.sa-east-1.rds.amazonaws.com/production')
+#db = connect('mysql://')
 
 db = peewee.MySQLDatabase("production",
-                        host="external-read.cu98qr8jhy71.sa-east-1.rds.amazonaws.com",
+                        host="",
                         port=3306,
-                        user="readonly_dev",
-                        passwd="QZy&h*YOc2%n6J||fLaN")
+                        user="",
+                        passwd="")
 
 
 class BaseModel(peewee.Model):
