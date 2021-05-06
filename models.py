@@ -1,6 +1,6 @@
 import peewee
 db = peewee.MySQLDatabase('superset', user='root', passwd='snerknow12')
-#db = connect('mysql://root:snerknow12@localhost:3306/superset')
+#db = connect('mysql://root:teste@localhost:3306/superset')
 
 
 class BaseModel(peewee.Model):
